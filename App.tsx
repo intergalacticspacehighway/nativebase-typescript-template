@@ -1,13 +1,15 @@
 import React from "react";
-import { Box, Link } from "native-base";
+import { Box, Link, NativeBaseProvider } from "native-base";
 
 export default function App() {
   return (
-    <Box>
-      Nativebase
+    <NativeBaseProvider>
       <Box>
-        <Link href="https://nativebase.github.io">Getting started</Link>
+        Nativebase v3.0
+        <Box>
+          <Link href="https://nativebase.github.io">Getting started</Link>
+        </Box>
       </Box>
-    </Box>
+    </NativeBaseProvider>
   );
 }
